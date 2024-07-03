@@ -7,12 +7,12 @@ function App() {
   const [todoValue, setTodoValue] = useState('');
 
   const persistData = (newList) => {
-    localStorage.setItem('todos', JSON.stringify({ todos: newList }));
-  };
+    localStorage.setItem("todos", JSON.stringify({todos: newList}))
+  }
 
   const handleAddTodo = (newTodo) => {
     const newTodoList = [...todos, newTodo];
-    persistData(newTodoList);
+    persistData(newTodoList)
     setTodos(newTodoList);
   };
 
@@ -20,7 +20,7 @@ function App() {
     const newTodoList = todos.filter((todo, todoIndex) => {
       return todoIndex !== index;
     });
-    persistData(newTodoList);
+    persistData(newTodoList)
     setTodos(newTodoList);
   };
 
@@ -30,20 +30,7 @@ function App() {
     handleDeleteTodo(index);
   };
 
-  useEffect(() => {
-    if (!localStorage) {
-      return;
-    }
-    
-    let localTodos = localStorage.getItem('todos');
-
-    if (!localTodos) {
-      return;
-    }
-
-    localTodos = JSON.parse(localTodos).todos;
-    setTodos[localTodos];
-  }, []);
+ 
 
   return (
     <>
