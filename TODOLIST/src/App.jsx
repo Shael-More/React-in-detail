@@ -30,6 +30,20 @@ function App() {
     handleDeleteTodo(index);
   };
 
+  useEffect(() => {
+    if (!localStorage)
+      return
+
+    let localTodos = localStorage.getItem("todos")
+
+    if(!localTodos) return
+
+    localTodos = JSON.parse(localTodos).todos
+
+
+    setTodoValue(localTodos)
+  }, [])
+
  
 
   return (
