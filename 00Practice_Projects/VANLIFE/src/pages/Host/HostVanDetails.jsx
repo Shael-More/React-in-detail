@@ -1,24 +1,24 @@
 import React from 'react';
-import { useParams, Link, Outlet, NavLink } from 'react-router-dom';
+import { Link, Outlet, NavLink, useParams } from 'react-router-dom';
 
 export default function HostVanDetail() {
+  const {id} =useParams()
+  const [currentVan, setCurrentVan] = React.useState([])
+
   const vanDetailStyle = {
     fontWeight: 'bold',
     textDecoration: 'underline',
     color: '#161616',
   };
 
-  const [currentVan, setCurerentVan] = React.useState(null);
-  const { id } = useParams();
-
   React.useEffect(() => {
     fetch(`/api/host/vans/${id}`)
       .then((res) => res.json())
-      .then((data) => setCurerentVan(data.vans));
-  }, []);
+      .then((data) => setCurrentVan(data.vans));
+  }, [])
 
-  if (!currentVan) {
-    return <h1>Loading...</h1>;
+  if(!currentVan) {
+    return <h1>Loading...</h1>
   }
 
   return (
@@ -60,7 +60,7 @@ export default function HostVanDetail() {
           </NavLink>
         </nav>
 
-        <Outlet context={{currentVan }} />
+        <Outlet context={{ currentVan }} />
       </div>
     </section>
   );
