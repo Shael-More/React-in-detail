@@ -7,7 +7,7 @@ export default function Error() {
     <>
       <h1>{error.message}</h1>
       <pre>
-        {error.status} - {error.statusText}{' '}
+        {error.status} - {error.statusText}
       </pre>
     </>
   );
