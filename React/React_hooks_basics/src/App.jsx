@@ -9,6 +9,7 @@ import UserChallenge from './components/UserChallenge';
 import CleanupFunc from './components/CleanupFunc';
 import List from './components/List';
 import Forms from './components/Forms';
+import InputChallenge from './components/InputChallenge';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       {/* <UserChallenge /> */}
       {/* <CleanupFunc /> */}
       {/* <List /> */}
-      <Forms />
+      {/* <Forms /> */}
+      <InputChallenge />
     </>
   );
 }
