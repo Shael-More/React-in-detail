@@ -10,6 +10,8 @@ import CleanupFunc from './components/CleanupFunc';
 import List from './components/List';
 import Forms from './components/Forms';
 import InputChallenge from './components/InputChallenge';
+import MultipleInput from './components/MultipleInput';
+import OtherInputs from './components/OtherInputs';
 
 
 function App() {
@@ -24,7 +26,9 @@ function App() {
       {/* <CleanupFunc /> */}
       {/* <List /> */}
       {/* <Forms /> */}
-      <InputChallenge />
+      {/* <InputChallenge /> */}
+      {/* <MultipleInput /> */}
+      <OtherInputs />
     </>
   );
 }
