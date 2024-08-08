@@ -12,6 +12,11 @@ import Forms from './components/Forms';
 import InputChallenge from './components/InputChallenge';
 import MultipleInput from './components/MultipleInput';
 import OtherInputs from './components/OtherInputs';
+import UncontrolledInputs from './components/UncontrolledInputs';
+import UseRefBasics from './components/UseRefBasics';
+import ToggleCustomHook from './components/ToggleCustomHook';
+import FetchData from './components/FetchData';
+import Navbar from './components/ContextApi/Navbar'
 
 
 function App() {
@@ -28,7 +33,12 @@ function App() {
       {/* <Forms /> */}
       {/* <InputChallenge /> */}
       {/* <MultipleInput /> */}
-      <OtherInputs />
+      {/* <OtherInputs /> */}
+      {/* <UncontrolledInputs /> */}
+      {/* <UseRefBasics /> */}
+      {/* <ToggleCustomHook /> */}
+      {/* <FetchData /> */}
+      <Navbar />
     </>
   );
 }
