@@ -127,3 +127,29 @@ button:focus-visible {
   width: 100%;
   margin-top: 2rem;
 }
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 2rem; */
+
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li  {
+  list-style-type: none;
+  padding: 0 1rem;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
