@@ -17,8 +17,12 @@ import UseRefBasics from './components/UseRefBasics';
 import ToggleCustomHook from './components/ToggleCustomHook';
 import FetchData from './components/FetchData';
 import Navbar from './components/ContextApi/Navbar'
-
-
+import UseReducer from './components/Reducer/UseReducer';
+import LowerState from './components/Performance';
+import LowerStateChallenge from './components/LowerStateChallenge';
+import LowerStateMemo from './components/Memo/index';
+import UseTransition from './components/UseTransition';
+import LatestReact from './components/SuspenseAPI';
 function App() {
   return (
     <>
@@ -38,7 +42,13 @@ function App() {
       {/* <UseRefBasics /> */}
       {/* <ToggleCustomHook /> */}
       {/* <FetchData /> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      {/* <UseReducer/> */}
+      {/* <LowerState /> */}
+      {/* <LowerStateChallenge /> */}
+      {/* <LowerStateMemo /> */}
+      {/* <UseTransition /> */}
+      <LatestReact />
     </>
   );
 }
